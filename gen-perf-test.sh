@@ -34,7 +34,7 @@ RATE="${2:-$def_rate}"
 DURATION="${3:-$def_duration}"
 TIMEOUT="${4:-$def_timeout}"
 res_path=results.bin
-mkdir $path
+mkdir -p $path
 vegeta attack -rate=$RATE -duration=$DURATION -timeout=$TIMEOUT -targets=targets.txt > $path/$res_path
 cd $path
 vegeta report -type='hist[0,1s,2s,3s]' $res_path > histogram.data
