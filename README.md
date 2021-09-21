@@ -1,5 +1,5 @@
 ## TLDR
-- Run `sh perf-test-gen.sh` to scaffold a basic directory structure to use `vegeta` cli.
+- Run `sh gen-perf-test.sh` to scaffold a basic directory structure to use `vegeta` cli.
 - This script creates a `.perf-test` dir in the current directory
 - .perf-test file structure:  
 |-- targets.txt  
