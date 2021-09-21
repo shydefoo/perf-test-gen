@@ -1,10 +1,10 @@
 ## TLDR
-- perf-test-gen.sh scaffolds a basic structure to use `vegeta` cli.
-- Run this script to create a `.perf-test` dir in the current directory
-- .perf-test file structure:
-| -- targets.txt
-| -- payloads/
-| -- run.sh
+- Run `sh perf-test-gen.sh` to scaffold a basic directory structure to use `vegeta` cli.
+- This script creates a `.perf-test` dir in the current directory
+- .perf-test file structure:  
+|-- targets.txt  
+|-- payloads/  
+|-- run.sh  
 
 - targets.txt contain an example configuratio. See [here](https://github.com/tsenart/vegeta#http-format) for more info
 - run.sh is the entry point to start attacking, eg:
